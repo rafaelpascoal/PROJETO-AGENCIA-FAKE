@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap; /*Utilizei essa shorthand para determinar que os itens se posicionem em linha e com quebra de linha*/
+    height: 100px;
+    /*background-color: cadetblue; Utilizei a borda apenas para vsualizar melhor*/
+    justify-content: center; /*Propriedade utilizada para centralizar os itens*/
+    align-items: center; /*Propriedade utilizada para centralizar os itens em conjunto com a justify-content*/
+}
+
+.logo {
+    /*border: 1px solid red; Utilizei a borda apenas para vsualizar melhor*/
+    flex: 20%; /*Propriedade utilizada para determinar o espaço utilizado pela tag*/
+    text-align: left;
+    margin-left: 10%;
+}
+
+.logo h1 {
+    font-family: 'Lobster', cursive;
+    color: #180f4a;
+    font-size: 34px;
+}
+
+.menu {
+    /*border: 1px solid green; Utilizei a borda apenas para vsualizar melhor*/ 
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: #180f4a;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #ff2978;
+    border-top: 4px solid #180f4a;
+}
+
+#botao {
+    background-color: #180f4a;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#botao:hover {
+    border: none;
+    background-color: #ff2978;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    /* background-color: gray; Utilizei o fundo apenas para vsualizar melhor*/
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    /* border: 1px solid blue; Utilizei a borda apenas para vsualizar melhor*/
+    flex: 40%; /*Determina o espaço que a tag utilizará.*/
+    margin-left: 10%;
+}
+
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #180f4a;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p {
+    color: gray;
+    text-align: left;
+}
+
+.contact-btn {
+    display: inline-block; /* Desloquei o botão para baixo com essa propriedade */
+    background-color: #ff2978;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase; /*Transformei todas as letras em maiúsculas*/
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: #180f4a;
+}
+
+.img-headline {
+    /* border: 1px solid red; */
+    flex: 40%; /*Determina o espaço que a tag utilizará.*/
+    margin-right: 10%;
+    text-align: center;
+}
+
+.section {
+    display: inline-block;
+    margin-top: 80px; /*Para criar um espaçamento entre a tag section e a tag header*/
+    /* border: 1px solid black; Borda utilizada apenas para visualização.*/
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    /* height: 400px; Coloquei tamanho apenas para medir os cards que ficariam na section*/
+    padding:5%;
+    
+}
+
+.section .subtitulo {
+    width: 100%;
+    font-size: 40px;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color: #180f4a;
+}
+
+.servicos {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #ff2978;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #ff2978;
+    color: white;
+    padding: 45px;
+}
+
+.card:hover img {
+    display: none; /*Isso é necessário para que as imagens desapareçam no momento em que o cursor for posicionado no card.*/
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+.texto-oculto {
+    display: none; /*Criei um texto a mais na div card, ou seja, terão dois textos (um com a classe card-text e outro com a classe texto-oculto). Incluí a propriedade display: none no texto oculto para ele desaparecer em um primeiro momento e só aparecer quando posicionarmos o cursor no card.*/
+}
+
+.rodape {
+    margin-top: 100px;
+    height: 314px;
+    background-image: linear-gradient(180deg, #180f4a, #090422, black);
+    text-align: center;
+    border-top: 5px solid #ff2978;
+}
+
+.logo-rodape {
+    padding: 71px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+b {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
