@@ -1,0 +1,44 @@
+@media screen and (max-width: 1005px) {
+    .navbar {
+        position: relative; /*Para não ficar fixo na tela (rolar junto com ela)*/
+    }
+    
+    .menu {
+        display: none; /*Esconder o menu*/
+    }
+
+    .logo {
+        margin: 0; /*Retirar a margem que havia antes*/
+        text-align: center; /*Deixar o nome do local em evidência, centralizado.*/
+    }
+
+    .header {
+        padding-top: 30px; /*Diminuímos o preenchimento do header (antes era de 100px)*/
+    }
+
+    .headline {
+        flex: 100%; /*Antes, o tamanho em tela era de 40%. Agora, com dispositivos menores,  ideal é separar os dois lados (texto e imagem), colocando um e depois o outro com a rolagem da tela acontecendo.*/
+        margin: 5%;
+        text-align: center;
+    }
+
+    .headline p {
+        text-align: center;
+    }
+
+    .img-headline {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .whats {
+        display: none; /*Retirar o ícone de whatsapp para manter a tela mais limpa.*/
+    }
+
+
+}

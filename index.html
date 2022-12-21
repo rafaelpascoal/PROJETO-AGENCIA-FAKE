@@ -7,8 +7,9 @@
     <meta name="description" content="Um site de exemplo">
     <meta name="keywords" content="agencia digital, css, html">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilo/responsivo.css">
 
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Projeto Site Agência Fictícia</title>
 
     
@@ -20,10 +21,11 @@
             <h1>Agência Fake</h1>
         </div>
         <div class="menu">
+            <span class="material-symbols-outlined">menu</span>
             <a href="#">Home</a>
             <a href="#">Sobre Nós</a>
             <a href="#">Serviços</a>
-            <a href="#" id="botao">Fale Conosco</a>
+            <a href="https://api.whatsapp.com/send?phone= COLOCAR O NÚMERO DO TELEFONE DE CONTATO AQUI &text=Ol%C3%A1,%20peguei%20seu%20link%20no%20site!!" id="botao">Fale Conosco</a>
         </div>
     </nav>
 
@@ -86,5 +88,14 @@
         </div>
         <b>© Todos os Direitos Reservados</b>
     </footer>
+    <a href="https://api.whatsapp.com/send?phone= COLOCAR O NÚMERO DO TELEFONE DE CONTATO AQUI &text=Ol%C3%A1,%20peguei%20seu%20link%20no%20site!!" class="whats" target="_blank"><img src="imagens/Novo Projeto.png" alt="" style="width:100px"></a> 
+    
+    <!--Criei a imagem do whatsapp no site Photopea, incluindo uma largura de 100px para ele ficar menor.-->
+
+    <!--Inseri um CSS com position: fixed (para fixá-lo no canto direito inferior da tela e permanecer fixo no caso de rolagem da página), além dos comandos bottom e right para criar um espaçamento na borda da tela.-->
+    
+    <!--Depois envelopei a imagem em um link para que o usuário tenha acesso ao contato de whatsapp.-->
+    
+    <!--Para gerar o link de acesso ao whatsapp, entrei em site de gerador de links para whats, incluí um telefone (que deve ser inserido no local que está inserido "COLOCAR O NÚMERO DE TELEFONE DE CONTATO AQUI" no link).-->
 </body>
 </html>

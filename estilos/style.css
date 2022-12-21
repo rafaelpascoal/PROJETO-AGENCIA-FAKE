@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
@@ -9,10 +11,12 @@ body {
 }
 
 .navbar {
+    position: fixed; /*Para fixar o menu no canto superior da tela*/
+    width: 100%;
     display: flex;
     flex-flow: row wrap; /*Utilizei essa shorthand para determinar que os itens se posicionem em linha e com quebra de linha*/
     height: 100px;
-    /*background-color: cadetblue; Utilizei a borda apenas para vsualizar melhor*/
+    background-color: white;
     justify-content: center; /*Propriedade utilizada para centralizar os itens*/
     align-items: center; /*Propriedade utilizada para centralizar os itens em conjunto com a justify-content*/
 }
@@ -44,6 +48,10 @@ body {
     padding: 20px 16px;
 }
 
+.menu span {
+    display: none;
+}
+
 .menu a:hover {
     color: #ff2978;
     border-top: 4px solid #180f4a;
@@ -70,6 +78,7 @@ body {
     /* background-color: gray; Utilizei o fundo apenas para vsualizar melhor*/
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
 
 .headline {
@@ -188,4 +197,10 @@ body {
 b {
     color: white;
     font-family: 'Roboto', sans-serif;
+}
+.whats {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    
 }
